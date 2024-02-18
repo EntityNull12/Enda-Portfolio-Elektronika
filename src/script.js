@@ -1,17 +1,17 @@
 // navbar fixed
-window.onscroll = function(){
+window.onscroll = function () {
     const header = document.querySelector('nav');
     const fixednav = header.offsetTop;
 
-    if(window.pageYOffset > fixednav){
+    if (window.pageYOffset > fixednav) {
         header.classList.add('navbar-fixed');
-    }else{
+    } else {
         header.classList.remove('navbar-fixed');
     }
 }
 
 // hamburger
 const hamburger = document.querySelector('#hamburger');
-hamburger.addEventListener('click', function(){
+hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active');
 });
