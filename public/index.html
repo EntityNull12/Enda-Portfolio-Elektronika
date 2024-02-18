@@ -32,13 +32,13 @@
           class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
           <li>
             <a href="#home"
-              class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 dark:text-white md:dark:text-green-500"
+              class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-white md:dark:text-green-500"
               aria-current="page">Home</a>
           </li>
           <li>
             <a href="#about"
               class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tentang
-              Saya</a>
+              </a>
           </li>
           <li>
             <a href="#project"
@@ -58,10 +58,10 @@
 
 <body class="">
 
-  <section id="home" class=" mx-4 md:mx-0">
-    <div class="content h-screen flex flex-col items-start md:items-center md:justify-center pt-28 md:pt-12">
+  <section id="home" class=" mx-4 md:mx-0 mb-32">
+    <div class="content h-1/2 md:h-screen container mx-auto flex flex-col items-start md:items-center md:justify-center pt-28 md:pt-12">
       <div class="title">
-        <h5 class="text-slate-400 text-xl font-semibold">hai,saya</h5>
+        <h5 class="text-slate-400 text-xl font-semibold">Hai,saya</h5>
       </div>
       <div class="fulltitle">
         <h1 class="text-green-500 font-bold text-3xl md:text-5xl">Enda Adittia Saputra</h1>
@@ -91,21 +91,21 @@
           </svg></a>
       </div>
       <div class="profile mx-auto relative mt-8">
-        <svg width="300px" viewBox="0 0 200 200" class="md:scale-125" xmlns="http://www.w3.org/2000/svg">
+        <svg width="300px" viewBox="0 0 200 200" class="md:scale-110" xmlns="http://www.w3.org/2000/svg">
           <path fill="#22C55E"
             d="M41.3,-55.4C51.5,-49.5,56.1,-34.6,60.4,-20C64.7,-5.3,68.7,9.1,65.3,21.8C61.9,34.4,51.3,45.1,39.2,54.6C27.1,64,13.5,72.1,-2.2,75.2C-18,78.2,-36,76.3,-44.1,65.5C-52.2,54.8,-50.5,35.3,-53.8,19C-57.1,2.6,-65.4,-10.7,-66.6,-26.2C-67.8,-41.7,-61.9,-59.4,-49.6,-64.5C-37.4,-69.7,-18.7,-62.3,-1.5,-60.1C15.6,-58,31.2,-61.2,41.3,-55.4Z"
             transform="translate(100 100)" />
         </svg>
-        <img src="../src/img/profile.png" class="absolute md:scale-125 top-0 left-8 translate-x-6 -translate-y-6"
+        <img src="../src/img/profile.png" class="absolute md:scale-105 top-0 left-8 translate-x-6 -translate-y-6"
           alt="foto profil Enda" srcset="" width="200px">
       </div>
     </div>
   </section>
 
-  <section id="about" class="bg-green-500 h-screen mt-24">
-    <div class="mx-4 pt-16">
+  <section id="about" class="bg-green-500 h-1/2 pb-16">
+    <div class=" pt-16 container mx-auto">
       <h3 class="text-white font-bold text-4xl lg:text-5xl text-center">Tentang Saya</h3>
-      <div class="content-about flex flex-col-reverse md:flex-row mt-16 items-center ">
+      <div class="content-about flex flex-col md:flex-row mt-8 md:mt-16 items-center ">
         <div class="about-profile md:w-1/3">
           <img src="../src/img/profile.png" alt="" srcset="" class="w-[150px] md: mx-auto">
         </div>
@@ -113,12 +113,11 @@
           <div class="flex flex-col w-full max-w-2xl leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
             <div class="flex items-center space-x-2 rtl:space-x-reverse">
                <span class="text-sm font-bold text-green-600 dark:text-white">Enda Adittia Saputra</span>
-               <!-- <span class="text-sm font-normal text-gray-500 dark:text-gray-400">11:46</span> -->
             </div>
             <p class="text-sm font-normal py-2.5 text-gray-900 dark:text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi, a fuga eius exercitationem vitae facilis
               illum quasi cumque harum praesentium voluptatem laborum accusamus consectetur ratione possimus quia iure
               quas.</p>
-            <!-- <span class="text-sm font-normal text-gray-500 dark:text-gray-400">Delivered</span> -->
+            
          </div>
           <!-- <p class="text-white font-semibold text-lg text-center md:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi, a fuga eius exercitationem vitae facilis
@@ -130,7 +129,33 @@
     </div>
   </section>
 
-  <section id="project">
+  <section id="project" class="h-1/2 bg-white pt-24">
+    <div class="container mx-auto">
+      <h3 class="text-green-500 font-bold text-4xl lg:text-5xl text-center">Projek Saya</h3>
+      <div class="flex flex-col md:flex-row mt-12">
+        <div class="img-project mb-8 md:mb-0">
+          <img src="../src/img/project.jpg" alt="project 1" srcset="">
+          <h5 class="text-green-500 font-bold uppercase text-xl mt-4">Projek 1</h5>
+          <p class="mt-3 text-xs text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt fugiat veniam eveniet autem tempore adipisci optio minus, sapiente itaque magni vel modi deleniti assumenda velit! Laboriosam, provident. Molestias, veniam!</p>
+        </div>
+        <div class="img-project mb-8 md:mb-0">
+          <img src="../src/img/project2.jpg" alt="project 2" srcset="">
+          <h5 class="text-green-500 font-bold uppercase text-xl mt-4">Projek 2</h5>
+          <p class="mt-3 text-xs text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam autem ex id earum reiciendis dolor, culpa dignissimos. Delectus ratione unde nostrum possimus deserunt voluptatum, nisi maiores officia quos! Minima, accusamus!</p>
+        </div>
+        <div class="img-project mb-8 md:mb-0">
+          <img src="../src/img/project3.jpg" alt="project 3" srcset="">
+          <h5 class="text-green-500 font-bold uppercase text-xl mt-4">Projek 3</h5>
+          <p class="mt-3 text-xs text-left text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates neque perferendis delectus asperiores numquam corporis sint reiciendis voluptatum, doloremque vitae molestias aspernatur eum obcaecati, laboriosam similique iusto quod magni architecto.</p>
+        </div>
+      </div>
+      <div class="justify-center flex md:mt-12">
+      <a href="#" type="button" class="focus:outline-none text-white bg-green-500 hover:bg-green-700 transition focus:ring-4 focus:ring-green-300 font-semibold rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Lihat Lainnya...</a>
+    </div>
+    </div>
+  </section>
+
+  <section id="contact">
     
   </section>
 
