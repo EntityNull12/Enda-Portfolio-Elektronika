@@ -6,6 +6,12 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {
+    colors:{
+      'green-theme' : '#65B741',
+      'facebook-new' : '#1778f2',
+      'facebook': '#4267B2',
+      'linkedin': '#0077b5',
+    },
     extend: {
       fontFamily: {
         open_sans: "'open_sans', serif"

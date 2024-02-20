@@ -115,6 +115,6 @@
 }
 
 .img-project > img{
-    @apply rounded-md w-full h-[250px] hover:scale-105 transition md:w-full md:h-[300px];
+    @apply rounded-md w-full h-[250px] md:hover:scale-105 transition md:w-full md:h-[300px];
 }
 
