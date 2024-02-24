@@ -104,6 +104,10 @@
     @apply scale-0;
 }
 
+.transisi-nav{
+    transition: all
+}
+
 .navbar-fixed {
     @apply fixed z-10 bg-white bg-opacity-80;
     backdrop-filter: blur(5px);
@@ -116,5 +120,9 @@
 
 .img-project > img{
     @apply rounded-md w-full h-[250px] md:hover:scale-105 transition md:w-full md:h-[300px];
+}
+
+.navbar-mobile-active{
+    @apply  -translate-y-[5px]
 }
 

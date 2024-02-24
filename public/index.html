@@ -1,217 +1,339 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- tailwind / flowbite -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+    <!-- font -->
+    <link rel="stylesheet" href="../src/font/font.css" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="../src/output.css">
-  <link rel="stylesheet" href="../src/input.css">
-  <link rel="stylesheet" href="../src/font/font.css">
-</head>
-
-<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-
-<header>
-  <nav class="bg-white absolute  w-full border-gray-200 dark:bg-gray-900">
-    <div class="max-w-screen-xl relative flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <span class="self-center text-green-500 font-bold text-2xl whitespace-nowrap dark:text-white">ENDA</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" id="hamburger"
-        class="block right-2 absolute mt-2 mr-2 top-0 text-sm text-gray-500 rounded-lg md:hidden  dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-default" aria-expanded="false">
-
-        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-        <span class="hamburger-line transition duration-300 "></span>
-        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul
-          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="#home"
-              class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-white md:dark:text-green-500"
-              aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#about"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Tentang
+  <header>
+    <nav class="bg-white absolute w-full border-gray-200 dark:bg-gray-900">
+      <div class="max-w-screen-xl h-[60px] transisi-nav relative flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center logo text-green-500 font-bold text-2xl whitespace-nowrap dark:text-white">ENDA</span>
+        </a>
+        <button
+          data-collapse-toggle="navbar-tombol"
+          type="button"
+          id="hamburger"
+          class="block right-2 absolute mt-2 mr-2 top-0 text-sm text-gray-500 rounded-lg md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-tombol"
+          aria-expanded="false"
+        >
+          <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+          <span class="hamburger-line transition duration-300"></span>
+          <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#home" class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-white md:dark:text-green-500" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Tentang
               </a>
-          </li>
-          <li>
-            <a href="#project"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projek</a>
-          </li>
-          <li>
-            <a href="#contact"
-              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Kontak</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
-
-
-<body class="">
-
-  <section id="home" class=" mx-4 md:mx-0 mb-32">
-    <div class="content h-1/2 md:h-screen container mx-auto flex flex-col items-start md:items-center md:justify-center pt-28 md:pt-12">
-      <div class="title">
-        <h5 class="text-slate-400 text-xl font-semibold">Hai,saya</h5>
-      </div>
-      <div class="fulltitle">
-        <h1 class="text-green-500 font-bold text-3xl md:text-5xl">Enda Adittia Saputra</h1>
-      </div>
-
-      <div class="icon flex mt-3">
-        <a href="https://www.facebook.com/endaenda.endaenda.792?mibextid=ZbWKwL">
-          <svg width="22px" class="mx-0.5" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"
-            id="facebook">
-            <path
-              d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z"
-              fill="#0e9f6e" class="color000000 svgShape"></path>
-          </svg></a>
-        <a href="https://www.instagram.com/endaadittia?igsh=MXY3MGdtcWEzdXVrdA==">
-          <svg width="22px" xmlns="http://www.w3.org/2000/svg" class="mx-0.5" data-name="Layer 1" viewBox="0 0 24 24"
-            id="instagram">
-            <path
-              d="M12,9.52A2.48,2.48,0,1,0,14.48,12,2.48,2.48,0,0,0,12,9.52Zm9.93-2.45a6.53,6.53,0,0,0-.42-2.26,4,4,0,0,0-2.32-2.32,6.53,6.53,0,0,0-2.26-.42C15.64,2,15.26,2,12,2s-3.64,0-4.93.07a6.53,6.53,0,0,0-2.26.42A4,4,0,0,0,2.49,4.81a6.53,6.53,0,0,0-.42,2.26C2,8.36,2,8.74,2,12s0,3.64.07,4.93a6.86,6.86,0,0,0,.42,2.27,3.94,3.94,0,0,0,.91,1.4,3.89,3.89,0,0,0,1.41.91,6.53,6.53,0,0,0,2.26.42C8.36,22,8.74,22,12,22s3.64,0,4.93-.07a6.53,6.53,0,0,0,2.26-.42,3.89,3.89,0,0,0,1.41-.91,3.94,3.94,0,0,0,.91-1.4,6.6,6.6,0,0,0,.42-2.27C22,15.64,22,15.26,22,12S22,8.36,21.93,7.07Zm-2.54,8A5.73,5.73,0,0,1,19,16.87,3.86,3.86,0,0,1,16.87,19a5.73,5.73,0,0,1-1.81.35c-.79,0-1,0-3.06,0s-2.27,0-3.06,0A5.73,5.73,0,0,1,7.13,19a3.51,3.51,0,0,1-1.31-.86A3.51,3.51,0,0,1,5,16.87a5.49,5.49,0,0,1-.34-1.81c0-.79,0-1,0-3.06s0-2.27,0-3.06A5.49,5.49,0,0,1,5,7.13a3.51,3.51,0,0,1,.86-1.31A3.59,3.59,0,0,1,7.13,5a5.73,5.73,0,0,1,1.81-.35h0c.79,0,1,0,3.06,0s2.27,0,3.06,0A5.73,5.73,0,0,1,16.87,5a3.51,3.51,0,0,1,1.31.86A3.51,3.51,0,0,1,19,7.13a5.73,5.73,0,0,1,.35,1.81c0,.79,0,1,0,3.06S19.42,14.27,19.39,15.06Zm-1.6-7.44a2.38,2.38,0,0,0-1.41-1.41A4,4,0,0,0,15,6c-.78,0-1,0-3,0s-2.22,0-3,0a4,4,0,0,0-1.38.26A2.38,2.38,0,0,0,6.21,7.62,4.27,4.27,0,0,0,6,9c0,.78,0,1,0,3s0,2.22,0,3a4.27,4.27,0,0,0,.26,1.38,2.38,2.38,0,0,0,1.41,1.41A4.27,4.27,0,0,0,9,18.05H9c.78,0,1,0,3,0s2.22,0,3,0a4,4,0,0,0,1.38-.26,2.38,2.38,0,0,0,1.41-1.41A4,4,0,0,0,18.05,15c0-.78,0-1,0-3s0-2.22,0-3A3.78,3.78,0,0,0,17.79,7.62ZM12,15.82A3.81,3.81,0,0,1,8.19,12h0A3.82,3.82,0,1,1,12,15.82Zm4-6.89a.9.9,0,0,1,0-1.79h0a.9.9,0,0,1,0,1.79Z"
-              fill="#0e9f6e" class=""></path>
-          </svg></a>
-        <a href="https://www.linkedin.com/in/enda-adittia-saputra-0bb437257">
-          <svg width="22px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="mx-0.5" viewBox="0 0 24 24"
-            id="linkedin">
-            <path
-              d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
-              fill="#0e9f6e" class=""></path>
-          </svg></a>
-      </div>
-      <div class="profile mx-auto relative mt-8">
-        <svg width="300px" viewBox="0 0 200 200" class="md:scale-110" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#0E9F6E"
-            d="M41.3,-55.4C51.5,-49.5,56.1,-34.6,60.4,-20C64.7,-5.3,68.7,9.1,65.3,21.8C61.9,34.4,51.3,45.1,39.2,54.6C27.1,64,13.5,72.1,-2.2,75.2C-18,78.2,-36,76.3,-44.1,65.5C-52.2,54.8,-50.5,35.3,-53.8,19C-57.1,2.6,-65.4,-10.7,-66.6,-26.2C-67.8,-41.7,-61.9,-59.4,-49.6,-64.5C-37.4,-69.7,-18.7,-62.3,-1.5,-60.1C15.6,-58,31.2,-61.2,41.3,-55.4Z"
-            transform="translate(100 100)" />
-        </svg>
-        <img src="../src/img/profile.png" class="absolute md:scale-105 top-0 left-8 translate-x-6 -translate-y-6"
-          alt="foto profil Enda" srcset="" width="200px">
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="bg-green-500 h-1/2 pb-16">
-    <div class=" pt-16 container mx-auto">
-      <h3 class="text-white font-bold text-4xl lg:text-5xl text-center">Tentang Saya</h3>
-      <div class="content-about flex flex-col md:flex-row mt-8 md:mt-16 items-center ">
-        <div class="about-profile md:w-1/3">
-          <img src="../src/img/profile.png" alt="" srcset="" class="w-[150px] md: mx-auto">
+            </li>
+            <li>
+              <a
+                href="#project"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Projek</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Kontak</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="about-text md:w-full">
-          <div class="flex flex-col w-full max-w-2xl leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
-            <div class="flex items-center space-x-2 rtl:space-x-reverse">
-               <span class="text-sm font-bold text-green-600 dark:text-white">Enda Adittia Saputra</span>
+        <!-- mobile -->
+        <div class="w-full nav-mobile transition-all -translate-y-[300px]">
+          <div class="w-full md:hidden" id="navbar-tombol">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 bg-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="#home" class="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-white md:dark:text-green-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#about" class="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Tentang
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#project"
+                  class="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Projek</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block py-2 px-3 text-gray-900 rounded md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <section id="home" class="mx-4 md:mx-0 mb-32">
+      <div class="content h-screen container mx-auto flex flex-col items-start md:items-center md:justify-center pt-28 md:pt-12">
+        <div class="fulltitle">
+          <h1 class="text-green-500 font-bold text-4xl md:text-5xl">Enda Adittia Saputra</h1>
+        </div>
+        <div class="title">
+          <h5 class="text-slate-400 text-md md:text-lg font-semibold mt-2 whitespace-pre"> </h5>
+        </div>
+
+        <div class="icon flex mt-3">
+          <a href="https://www.facebook.com/endaenda.endaenda.792?mibextid=ZbWKwL">
+            <svg width="22px" class="mx-0.5" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook">
+              <path
+                d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z"
+                fill="#0e9f6e"
+                class="color000000 svgShape"
+              ></path></svg
+          ></a>
+          <a href="https://www.instagram.com/endaadittia?igsh=MXY3MGdtcWEzdXVrdA==">
+            <svg width="22px" xmlns="http://www.w3.org/2000/svg" class="mx-0.5" data-name="Layer 1" viewBox="0 0 24 24" id="instagram">
+              <path
+                d="M12,9.52A2.48,2.48,0,1,0,14.48,12,2.48,2.48,0,0,0,12,9.52Zm9.93-2.45a6.53,6.53,0,0,0-.42-2.26,4,4,0,0,0-2.32-2.32,6.53,6.53,0,0,0-2.26-.42C15.64,2,15.26,2,12,2s-3.64,0-4.93.07a6.53,6.53,0,0,0-2.26.42A4,4,0,0,0,2.49,4.81a6.53,6.53,0,0,0-.42,2.26C2,8.36,2,8.74,2,12s0,3.64.07,4.93a6.86,6.86,0,0,0,.42,2.27,3.94,3.94,0,0,0,.91,1.4,3.89,3.89,0,0,0,1.41.91,6.53,6.53,0,0,0,2.26.42C8.36,22,8.74,22,12,22s3.64,0,4.93-.07a6.53,6.53,0,0,0,2.26-.42,3.89,3.89,0,0,0,1.41-.91,3.94,3.94,0,0,0,.91-1.4,6.6,6.6,0,0,0,.42-2.27C22,15.64,22,15.26,22,12S22,8.36,21.93,7.07Zm-2.54,8A5.73,5.73,0,0,1,19,16.87,3.86,3.86,0,0,1,16.87,19a5.73,5.73,0,0,1-1.81.35c-.79,0-1,0-3.06,0s-2.27,0-3.06,0A5.73,5.73,0,0,1,7.13,19a3.51,3.51,0,0,1-1.31-.86A3.51,3.51,0,0,1,5,16.87a5.49,5.49,0,0,1-.34-1.81c0-.79,0-1,0-3.06s0-2.27,0-3.06A5.49,5.49,0,0,1,5,7.13a3.51,3.51,0,0,1,.86-1.31A3.59,3.59,0,0,1,7.13,5a5.73,5.73,0,0,1,1.81-.35h0c.79,0,1,0,3.06,0s2.27,0,3.06,0A5.73,5.73,0,0,1,16.87,5a3.51,3.51,0,0,1,1.31.86A3.51,3.51,0,0,1,19,7.13a5.73,5.73,0,0,1,.35,1.81c0,.79,0,1,0,3.06S19.42,14.27,19.39,15.06Zm-1.6-7.44a2.38,2.38,0,0,0-1.41-1.41A4,4,0,0,0,15,6c-.78,0-1,0-3,0s-2.22,0-3,0a4,4,0,0,0-1.38.26A2.38,2.38,0,0,0,6.21,7.62,4.27,4.27,0,0,0,6,9c0,.78,0,1,0,3s0,2.22,0,3a4.27,4.27,0,0,0,.26,1.38,2.38,2.38,0,0,0,1.41,1.41A4.27,4.27,0,0,0,9,18.05H9c.78,0,1,0,3,0s2.22,0,3,0a4,4,0,0,0,1.38-.26,2.38,2.38,0,0,0,1.41-1.41A4,4,0,0,0,18.05,15c0-.78,0-1,0-3s0-2.22,0-3A3.78,3.78,0,0,0,17.79,7.62ZM12,15.82A3.81,3.81,0,0,1,8.19,12h0A3.82,3.82,0,1,1,12,15.82Zm4-6.89a.9.9,0,0,1,0-1.79h0a.9.9,0,0,1,0,1.79Z"
+                fill="#0e9f6e"
+                class=""
+              ></path></svg
+          ></a>
+          <a href="https://www.linkedin.com/in/enda-adittia-saputra-0bb437257">
+            <svg width="22px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="mx-0.5" viewBox="0 0 24 24" id="linkedin">
+              <path
+                d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
+                fill="#0e9f6e"
+                class=""
+              ></path></svg
+          ></a>
+        </div>
+        <div class="profile mx-auto relative mt-8">
+          <svg width="300px" viewBox="0 0 200 200" class="md:scale-110" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#0E9F6E"
+              d="M41.3,-55.4C51.5,-49.5,56.1,-34.6,60.4,-20C64.7,-5.3,68.7,9.1,65.3,21.8C61.9,34.4,51.3,45.1,39.2,54.6C27.1,64,13.5,72.1,-2.2,75.2C-18,78.2,-36,76.3,-44.1,65.5C-52.2,54.8,-50.5,35.3,-53.8,19C-57.1,2.6,-65.4,-10.7,-66.6,-26.2C-67.8,-41.7,-61.9,-59.4,-49.6,-64.5C-37.4,-69.7,-18.7,-62.3,-1.5,-60.1C15.6,-58,31.2,-61.2,41.3,-55.4Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <img  src="../src/img/profile.png" class="absolute foto-profile-utama md:scale-105 top-0 left-8 translate-x-6 -translate-y-6" alt="foto profil Enda" srcset="" width="200px" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-green-500 h-1/2 pb-16">
+      <div class="pt-16 container mx-auto">
+        <h3 data-aos="fade-down" data-aos-anchor-placement="top-bottom" class="text-white font-bold text-4xl lg:text-5xl text-center">Tentang Saya</h3>
+        <div class="content-about flex flex-col md:flex-row mt-8  items-center">
+          <div data-aos="fade-right" data-aos-delay="100" data-aos-offset="0" class="about-profile md:w-1/2">
+            <img src="../src/img/profile.png" alt="" srcset="" class="w-[150px] md:w-[200px] md: mx-auto" />
+          </div>
+          <div data-aos="fade-down" data-aos-delay="500" data-aos-offset="0" class="about-text md:w-full">
+            <div class="flex flex-col w-full max-w-2xl leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
+              <div class="flex items-center space-x-2 rtl:space-x-reverse">
+                <span class="text-xl font-bold text-green-600 dark:text-white">Enda Adittia Saputra</span>
+              </div>
+              <p class="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi, a fuga eius exercitationem vitae facilis illum quasi cumque harum praesentium voluptatem laborum accusamus consectetur ratione possimus quia iure quas.
+              </p>
             </div>
-            <p class="text-sm font-normal py-2.5 text-gray-900 dark:text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi, a fuga eius exercitationem vitae facilis
-              illum quasi cumque harum praesentium voluptatem laborum accusamus consectetur ratione possimus quia iure
-              quas.</p>
-            
-         </div>
-          <!-- <p class="text-white font-semibold text-lg text-center md:text-left">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi, a fuga eius exercitationem vitae facilis
-            illum quasi cumque harum praesentium voluptatem laborum accusamus consectetur ratione possimus quia iure
-            quas.
-          </p> -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="project" class="h-1/2 bg-white pt-24">
-    <div class="container mx-auto">
-      <h3 class="text-green-500 font-bold text-4xl lg:text-5xl text-center">Projek Saya</h3>
-      <div class="flex flex-col md:flex-row mt-12">
-        <div class="img-project mb-8 md:mb-0">
-          <img src="../src/img/project.jpg" alt="project 1" srcset="">
-          <h5 class="text-green-500 font-bold uppercase text-xl mt-4">Projek 1</h5>
-          <p class="mt-3 text-xs text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt fugiat veniam eveniet autem tempore adipisci optio minus, sapiente itaque magni vel modi deleniti assumenda velit! Laboriosam, provident. Molestias, veniam!</p>
+    <section id="project" class="h-1/2 bg-white pt-24">
+      <div class="container mx-auto">
+        <h3 class="text-green-500 font-bold text-4xl lg:text-5xl text-center">Projek Saya</h3>
+        <div class="flex flex-col md:flex-row mt-12">
+          <div class="img-project mb-16 md:mb-0">
+            <img data-aos="flip-left" data-aos-offset="300" src="../src/img/project.jpg" alt="project 1" srcset="" />
+            <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="500">
+              <h5 class="text-green-500 font-bold uppercase text-2xl mt-6">Projek 1</h5>
+              <p class="mt-4 text-sm text-left text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt fugiat veniam eveniet autem tempore adipisci optio minus, sapiente itaque magni vel modi deleniti assumenda velit! Laboriosam, provident. Molestias,
+                veniam!
+              </p>
+            </div>
+          </div>
+          <div class="img-project mb-16 md:mb-0">
+            <img data-aos="flip-left" data-aos-offset="300" data-aos-delay="150" src="../src/img/project2.jpg" alt="project 2" srcset="" />
+            <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="600">
+              <h5 class="text-green-500 font-bold uppercase text-2xl mt-6">Projek 2</h5>
+              <p class="mt-4 text-sm text-left text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam autem ex id earum reiciendis dolor, culpa dignissimos. Delectus ratione unde nostrum possimus deserunt voluptatum, nisi maiores officia quos! Minima, accusamus!
+              </p>
+            </div>
+          </div>
+          <div class="img-project mb-16 md:mb-0">
+            <img data-aos="flip-left" data-aos-offset="300" data-aos-delay="250" src="../src/img/project3.jpg" alt="project 3" srcset="" />
+            <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="700">
+              <h5 class="text-green-500 font-bold uppercase text-2xl mt-6">Projek 3</h5>
+              <p class="mt-4 text-sm text-left text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates neque perferendis delectus asperiores numquam corporis sint reiciendis voluptatum, doloremque vitae molestias aspernatur eum obcaecati, laboriosam
+                similique iusto quod magni architecto.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="img-project mb-8 md:mb-0">
-          <img src="../src/img/project2.jpg" alt="project 2" srcset="">
-          <h5 class="text-green-500 font-bold uppercase text-xl mt-4">Projek 2</h5>
-          <p class="mt-3 text-xs text-left text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam autem ex id earum reiciendis dolor, culpa dignissimos. Delectus ratione unde nostrum possimus deserunt voluptatum, nisi maiores officia quos! Minima, accusamus!</p>
-        </div>
-        <div class="img-project mb-8 md:mb-0">
-          <img src="../src/img/project3.jpg" alt="project 3" srcset="">
-          <h5 class="text-green-500 font-bold uppercase text-xl mt-4">Projek 3</h5>
-          <p class="mt-3 text-xs text-left text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates neque perferendis delectus asperiores numquam corporis sint reiciendis voluptatum, doloremque vitae molestias aspernatur eum obcaecati, laboriosam similique iusto quod magni architecto.</p>
+        <div class="justify-center flex md:mt-12">
+          <button
+            type="button"
+            class="focus:outline-none coming-soon text-white bg-green-500 hover:bg-green-700 transition focus:ring-4 focus:ring-green-300 font-semibold rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          >
+            Lihat Lainnya...
+          </button>
         </div>
       </div>
-      <div class="justify-center flex md:mt-12">
-      <a href="#" type="button" class="focus:outline-none text-white bg-green-500 hover:bg-green-700 transition focus:ring-4 focus:ring-green-300 font-semibold rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Lihat Lainnya...</a>
-    </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class=" pt-24 mb-32 md:mx-2">
-    <div class="content-contact flex flex-col md:flex-row mx-2 md:container md:mx-auto md:justify-center">
-      <a href="https://www.instagram.com/endaadittia?igsh=MXY3MGdtcWEzdXVrdA==" class="md:w-1/4">
-      <div class="contact-sosmed flex flex-row md:flex-col items-center md:justify-center rounded-t-lg md:rounded-l-lg md:rounded-r-none instagram h-36 px-4 py-2 md:h-40 md:py-0 w-full  bg-[url('../src/img/background-ig.jpg')] bg-center">
-        <div class="img-contact-profile w-20 md:mx-auto">
-          <img src="../src/img/profile-socmed4-modified.png" class="rounded-full" alt="@endaadittia(Instagram)" srcset="">
-        </div>
-        <div class="contact-content-caption ml-4 md:ml-0 md:text-center">
-          <h5 class="text-white font-bold text-xl">@endaadittia</h5>
-          <p class="text-gray-300">Instagram</p>
-        </div>
+    <section id="contact" class="pt-24 mb-32 md:mx-2 overflow-x-hidden overflow-y-hidden">
+      <div class="content-contact flex flex-col md:flex-row mx-2 md:container md:mx-auto md:justify-center">
+        <!-- tablet / desltop -->
+        <a data-aos="flip-left" data-aos-offset="100" href="https://www.instagram.com/endaadittia?igsh=MXY3MGdtcWEzdXVrdA==" class="md:w-1/4 hidden md:block">
+          <div
+            class="contact-sosmed flex flex-row md:flex-col items-center md:justify-center rounded-t-lg md:rounded-l-lg md:rounded-r-none instagram h-36 px-4 py-2 md:h-40 md:py-0 w-full bg-[url('../src/img/background-ig.jpg')] bg-center"
+          >
+            <div class="img-contact-profile w-20 md:mx-auto">
+              <img src="../src/img/profile-socmed4-modified.png" class="rounded-full" alt="@endaadittia(Instagram)" srcset="" />
+            </div>
+            <div class="contact-content-caption ml-4 md:ml-0 md:text-center">
+              <h5 class="text-white font-bold text-xl">@endaadittia</h5>
+              <p class="text-gray-300">Instagram</p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="flip-left" data-aos-offset="100" data-aos-delay="100" href="https://www.facebook.com/endaenda.endaenda.792?mibextid=ZbWKwL" class="md:w-1/4 hidden md:block">
+          <div class="contact-sosmed facebook h-36 md:h-40 md:py-0 md:justify-center w-full px-4 py-2 bg-facebook-new items-center flex flex-row-reverse md:flex-col">
+            <div class="img-contact-profile w-20 md:mx-auto">
+              <img src="../src/img/profile-socmed-modified.png" class="rounded-full" alt="EntityNull(Facebook)" srcset="" />
+            </div>
+            <div class="contact-content-caption mr-4 md:mr-0 md:text-center">
+              <h5 class="text-white font-bold text-xl">EntityNull</h5>
+              <p class="text-gray-300 text-right md:text-center">Facebook</p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="flip-left" data-aos-offset="100" data-aos-delay="200" href="https://www.facebook.com/enda.adittia.7?mibextid=ZbWKwL" class="md:w-1/4 hidden md:block">
+          <div class="contact-sosmed facebook h-36 md:h-40 md:py-0 md:justify-center w-full px-4 py-2 bg-facebook flex flex-row items-center md:flex-col">
+            <div class="img-contact-profile w-20 md:mx-auto">
+              <img src="../src/img/profile-socmed2.jpg" class="rounded-full" alt="Enda Adittia(Facebook)" srcset="" />
+            </div>
+            <div class="contact-content-caption ml-4 md:ml-0 md: text-center">
+              <h5 class="text-white font-bold text-xl">Enda Adittia</h5>
+              <p class="text-gray-300">Facebook</p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="flip-left" data-aos-offset="100" data-aos-delay="300" href="https://www.linkedin.com/in/enda-adittia-saputra-0bb437257" class="md:w-1/4 hidden md:block">
+          <div class="contact-sosmed linkedin rounded-b-lg md:rounded-r-lg md:rounded-l-none h-36 md:h-40 md:py-0 md:justify-center w-full items-center px-4 py-2 flex flex-row-reverse bg-linkedin md:flex-col">
+            <div class="img-contact-profile w-20 md:mx-auto">
+              <img src="../src/img/profile-socmed3-modified.png" class="rounded-full" alt="Enda Adittia Saputra(Linkedin)" srcset="" />
+            </div>
+            <div class="contact-content-caption mr-4 md:mr-0 md:text-center">
+              <h5 class="text-white font-bold text-xl md:truncate">Enda Adittia<span class="inline lg:hidden">...</span><span class="hidden lg:inline"> Saputra</span></h5>
+              <p class="text-gray-300 text-right md:text-center">Linkedin</p>
+            </div>
+          </div>
+        </a>
+        <!-- mobile -->
+        <a data-aos="fade-down" data-aos-offset="100" data-aos-delay="100" href="https://www.instagram.com/endaadittia?igsh=MXY3MGdtcWEzdXVrdA==" class="md:w-1/4 md:hidden">
+          <div
+            class="contact-sosmed flex flex-row md:flex-col items-center md:justify-center rounded-t-lg md:rounded-l-lg md:rounded-r-none instagram h-36 px-4 py-2 md:h-40 md:py-0 w-full bg-[url('../src/img/background-ig.jpg')] bg-center"
+          >
+            <div data-aos="fade-down" data-aos-offset="100" data-aos-delay="300" class="img-contact-profile w-20 md:mx-auto">
+              <img src="../src/img/profile-socmed4-modified.png" class="rounded-full" alt="@endaadittia(Instagram)" srcset="" />
+            </div>
+            <div class="contact-content-caption ml-4 md:ml-0 md:text-center " data-aos="fade-right" data-aos-offset="100" data-aos-delay="800">
+              <h5 class="text-white font-bold text-xl">@endaadittia</h5>
+              <p class="text-gray-300">Instagram</p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="fade-left" data-aos-offset="0" data-aos-delay="0" href="https://www.facebook.com/endaenda.endaenda.792?mibextid=ZbWKwL" class="md:w-1/4 md:hidden">
+          <div class="contact-sosmed facebook h-36 md:h-40 md:py-0 md:justify-center w-full px-4 py-2 bg-facebook-new items-center flex flex-row-reverse md:flex-col">
+            <div data-aos="fade-left" data-aos-offset="0" data-aos-delay="300" class="img-contact-profile w-20 md:mx-auto">
+              <img src="../src/img/profile-socmed-modified.png" class="rounded-full" alt="EntityNull(Facebook)" srcset="" />
+            </div>
+            <div class="contact-content-caption mr-4 md:mr-0 md:text-center" data-aos="fade-left" data-aos-offset="0" data-aos-delay="800">
+              <h5 class="text-white font-bold text-xl">EntityNull</h5>
+              <p class="text-gray-300 text-right md:text-center">Facebook</p>
+            </div>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/enda.adittia.7?mibextid=ZbWKwL" data-aos="fade-right" data-aos-offset="0" data-aos-delay="0" class="md:w-1/4 md:hidden">
+          <div data-aos="fade-right" data-aos-offset="0" data-aos-delay="300" class="contact-sosmed facebook h-36 md:h-40 md:py-0 md:justify-center w-full px-4 py-2 bg-facebook flex flex-row items-center md:flex-col">
+            <div class="img-contact-profile w-20 md:mx-auto" data-aos="fade-right" data-aos-offset="0" data-aos-delay="300">
+              <img src="../src/img/profile-socmed2.jpg" class="rounded-full" alt="Enda Adittia(Facebook)" srcset="" />
+            </div>
+            <div class="contact-content-caption ml-4 md:ml-0 md: text-center"  data-aos="fade-right" data-aos-offset="0" data-aos-delay="800">
+              <h5 class="text-white font-bold text-xl">Enda Adittia</h5>
+              <p class="text-gray-300">Facebook</p>
+            </div>
+          </div>
+        </a>
+        <a data-aos="fade-up" data-aos-offset="0" data-aos-delay="0" href="https://www.linkedin.com/in/enda-adittia-saputra-0bb437257" class="md:w-1/4 md:hidden">
+          <div class="contact-sosmed linkedin rounded-b-lg md:rounded-r-lg md:rounded-l-none h-36 md:h-40 md:py-0 md:justify-center w-full items-center px-4 py-2 flex flex-row-reverse bg-linkedin md:flex-col">
+            <div data-aos="fade-up" data-aos-offset="0" data-aos-delay="300" class="img-contact-profile w-20 md:mx-auto">
+              <img src="../src/img/profile-socmed3-modified.png" class="rounded-full" alt="Enda Adittia Saputra(Linkedin)" srcset="" />
+            </div>
+            <div class="contact-content-caption mr-4 md:mr-0 md:text-center" data-aos="fade-left" data-aos-offset="0" data-aos-delay="800">
+              <h5 class="text-white font-bold text-xl">Enda Adittia Saputra</h5>
+              <p class="text-gray-300 text-right md:text-center">Linkedin</p>
+            </div>
+          </div>
+        </a>
       </div>
-    </a>
-    <a href="https://www.facebook.com/endaenda.endaenda.792?mibextid=ZbWKwL" class="md:w-1/4">
-      <div class="contact-sosmed facebook h-36 md:h-40 md:py-0 md:justify-center w-full px-4 py-2  bg-facebook-new items-center flex flex-row-reverse md:flex-col">
-        <div class="img-contact-profile w-20 md:mx-auto">
-          <img src="../src/img/profile-socmed-modified.png" class="rounded-full" alt="EntityNull(Facebook)" srcset="">
-        </div>
-        <div class="contact-content-caption mr-4 md:mr-0 md:text-center">
-          <h5 class="text-white font-bold text-xl">EntityNull</h5>
-          <p class="text-gray-300 text-right md:text-center">Facebook</p>
-        </div>
-      </div>
-    </a>
-    <a href="https://www.facebook.com/enda.adittia.7?mibextid=ZbWKwL" class="md:w-1/4">
-      <div class="contact-sosmed facebook h-36 md:h-40 md:py-0 md:justify-center w-full  px-4 py-2  bg-facebook flex flex-row items-center md:flex-col">
-        <div class="img-contact-profile w-20 md:mx-auto">
-          <img src="../src/img/profile-socmed2.jpg" class="rounded-full" alt="Enda Adittia(Facebook)" srcset="">
-        </div>
-        <div class="contact-content-caption ml-4 md:ml-0 md: text-center">
-          <h5 class="text-white font-bold text-xl">Enda Adittia</h5>
-          <p class="text-gray-300">Facebook</p>
-        </div>
-      </div>
-    </a>
-    <a href="https://www.linkedin.com/in/enda-adittia-saputra-0bb437257" class="md:w-1/4">
-      <div class="contact-sosmed linkedin rounded-b-lg md:rounded-r-lg md:rounded-l-none h-36 md:h-40 md:py-0 md:justify-center w-full   items-center px-4 py-2  flex flex-row-reverse  bg-linkedin md:flex-col">
-        <div class="img-contact-profile w-20 md:mx-auto">
-          <img src="../src/img/profile-socmed3-modified.png" class="rounded-full" alt="Enda Adittia Saputra(Linkedin)" srcset="">
-        </div>
-        <div class="contact-content-caption mr-4 md:mr-0 md:text-center">
-          <h5 class="text-white font-bold text-xl ">Enda Adittia Saputra</h5>
-          <p class="text-gray-300 text-right md:text-center">Linkedin</p>
-        </div>
-      </div>
-    </a>
-    </div>
-  </section>
+    </section>
 
-</body>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.from('.foto-profile-utama', {duration: 1, yPercent: -25, opacity:0.5, ease:'back'});
+      gsap.from('.logo',{duration:0.5, xPercent:-50,  ease:'back'});
+      gsap.to('.title h5', {
+        duration: 2,
+        text: "Web Developer | Tech Enthusiast",
+        ease: "none",
+      });
+    </script>
 
-<footer class="bg-green-500">
-  <div class="w-full text-center font-bold text-xl md:ext-3xl py-4 text-white">
-    Enda Adittia Saputra
-  </div>
-</footer>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+        offset:300,
+      });
+    </script>
+  </body>
 
-<script src="../src/script.js"></script>
+  <footer class="bg-green-500">
+    <div class="w-full sm:text-center font-semibold text-sm md:ext-3xl py-4 px-4 text-gray-200">Enda Adittia Saputra 2024</div>
+  </footer>
 
+  <script src="../src/script.js"></script>
 </html>

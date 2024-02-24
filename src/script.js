@@ -11,7 +11,16 @@ window.onscroll = function () {
 }
 
 // hamburger
+const navbarmobile = document.querySelector('.nav-mobile');
 const hamburger = document.querySelector('#hamburger');
 hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active');
+    navbarmobile.classList.toggle('navbar-mobile-active');
+});
+
+// coming soon
+
+const comingsoon = document.querySelector('.coming-soon');
+comingsoon.addEventListener('click', function(){
+    alert('Akan hadir, maaf ya!!!');
 });
