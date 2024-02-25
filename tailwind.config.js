@@ -5,6 +5,7 @@ module.exports = {
   content: ["./**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"
   ],
+  darkMode: 'class',
   theme: {
     colors:{
       'green-theme' : '#65B741',

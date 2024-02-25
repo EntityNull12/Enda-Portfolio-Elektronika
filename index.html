@@ -17,13 +17,18 @@
     <nav class="bg-white absolute w-full border-gray-200 dark:bg-gray-900">
       <div class="max-w-screen-xl h-[60px] transisi-nav relative flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center logo text-green-500 font-bold text-2xl whitespace-nowrap dark:text-white">ENDA</span>
+          <span class="self-center logo text-green-500 font-bold text-2xl whitespace-nowrap dark:text-gray-200">ENDA</span>
         </a>
+        <!-- dark toggle -->
+        <button id="theme-toggle" type="button" class="text-green-500 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 absolute right-[15%] md:right-[40%] lg:right-[32%] xl:right-[27%] transition-all focus:bg-gray-200 dark:focus:bg-gray-700 rounded-lg text-sm p-2.5">
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+      </button>      
         <button
           data-collapse-toggle="navbar-tombol"
           type="button"
           id="hamburger"
-          class="block right-2 absolute mt-2 mr-2 top-0 text-sm text-gray-500 rounded-lg md:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="block right-2 absolute mt-2 mr-2 top-0 text-sm text-gray-500 rounded-lg md:hidden dark:text-gray-400 "
           aria-controls="navbar-tombol"
           aria-expanded="false"
         >
@@ -32,9 +37,9 @@
           <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
         </button>
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
             <li>
-              <a href="#home" class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-white md:dark:text-green-500" aria-current="page">Home</a>
+              <a href="#home" class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-white " aria-current="page">Home</a>
             </li>
             <li>
               <a
@@ -62,21 +67,21 @@
         <!-- mobile -->
         <div class="w-full nav-mobile transition-all -translate-y-[300px]">
           <div class="w-full md:hidden" id="navbar-tombol">
-            <ul class="font-medium flex flex-col md:p-0 mt-4 bg-green-500 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <a href="#home" class="block py-2 px-3 text-white border-b-2 border-white  rounded-t md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-white md:dark:text-green-500" aria-current="page"><li>Home</li></a>
+            <ul class="font-medium flex flex-col md:p-0 mt-4 bg-green-500 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+              <a href="#home" class="block py-2 px-3 text-gray-200 border-b-2 border-gray-200  rounded-t md:bg-transparent md:hover:text-green-700 md:text-gray-700 md:p-0 dark:text-gray-200 md:dark:text-green-500" aria-current="page"><li>Home</li></a>
 
-              <a href="#about" class="block py-2 px-3 text-white border-b-2 border-white  md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <a href="#about" class="block py-2 px-3 text-gray-200 border-b-2 border-gray-200  md:border-0 md:hover:text-green-700 md:p-0 dark:text-gray-200 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
                 ><li>Tentang</li>
               </a>
 
               <a
                 href="#project"
-                class="block py-2 px-3 text-white border-b-2 border-white  md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 px-3 text-gray-200 border-b-2 border-gray-200  md:border-0 md:hover:text-green-700 md:p-0 dark:text-gray-200 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
               >
                 <li>Projek</li></a
               >
 
-              <a href="#contact" class="block py-2 px-3 text-white rounded-b md:border-0 md:hover:text-green-700 md:p-0 dark:text-white md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              <a href="#contact" class="block py-2 px-3 text-gray-200 rounded-b md:border-0 md:hover:text-green-700 md:p-0 dark:text-gray-200 md:dark:hover:text-green-500 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent"
                 ><li>Kontak</li></a
               >
             </ul>
@@ -86,14 +91,14 @@
     </nav>
   </header>
 
-  <body>
+  <body class="dark:bg-gray-800">
     <section id="home" class="mx-4 md:mx-0 mb-32">
       <div class="content h-screen container mx-auto flex flex-col items-start md:items-center md:justify-center pt-28 md:pt-12">
         <div class="fulltitle">
-          <h1 class="text-green-500 font-bold text-4xl md:text-5xl">Enda Adittia Saputra</h1>
+          <h1 class="text-green-500 dark:text-gray-200 font-bold text-4xl md:text-5xl">Enda Adittia Saputra</h1>
         </div>
         <div class="title">
-          <h5 class="text-slate-400 text-md md:text-lg font-semibold mt-2 whitespace-pre"></h5>
+          <h5 class="text-slate-400 text-md md:text-lg font-semibold mt-2 whitespace-pre dark:text-gray-200"></h5>
         </div>
 
         <div class="icon flex mt-3">
@@ -145,10 +150,10 @@
           <div data-aos="fade-down" data-aos-delay="500" data-aos-offset="0" class="about-text md:w-full">
             <div class="flex flex-col w-full max-w-2xl leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
               <div class="flex items-center space-x-2 rtl:space-x-reverse">
-                <span class="text-xl font-bold text-green-600 dark:text-white">Enda Adittia Saputra</span>
+                <span class="text-xl font-bold text-green-500 dark:text-gray-200">Enda Adittia Saputra</span>
               </div>
-              <p class="text-sm font-normal py-2.5 text-gray-900 dark:text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit sequi, a fuga eius exercitationem vitae facilis illum quasi cumque harum praesentium voluptatem laborum accusamus consectetur ratione possimus quia iure quas.
+              <p class="text-sm font-normal py-2.5 text-gray-900 dark:text-gray-400">
+                Saya mahasiswa di Politeknik Manufaktur Bandung, jurusan Teknik Otomasi Manufaktur dan Mekatronika, prodi Teknoklogi Rekayasa Informatika Industri. Hobi saya yaitu membahas teknologi dan bermain game. Saat ini saya ingin mempelajari bahasa pemrograman terutama pemrograman web.
               </p>
             </div>
           </div>
@@ -156,15 +161,15 @@
       </div>
     </section>
 
-    <section id="project" class="h-1/2 bg-white pt-24">
+    <section id="project" class="h-1/2 bg-white dark:bg-gray-800 pt-24">
       <div class="container mx-auto">
-        <h3 class="text-green-500 font-bold text-4xl lg:text-5xl text-center">Projek Saya</h3>
+        <h3 class="text-green-500 dark:text-gray-200 font-bold text-4xl lg:text-5xl text-center">Projek Saya</h3>
         <div class="flex flex-col md:flex-row mt-12">
           <div class="img-project mb-16 md:mb-0">
             <img data-aos="flip-left" data-aos-offset="300" src="src/img/project.jpg" alt="project 1" srcset="" />
             <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="500">
-              <h5 class="text-green-500 font-bold uppercase text-2xl mt-6">Projek 1</h5>
-              <p class="mt-4 text-sm text-left text-gray-600">
+              <h5 class="text-green-500 dark:text-gray-200 font-bold uppercase text-2xl mt-6">Projek 1</h5>
+              <p class="mt-4 text-sm text-left text-gray-600 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt fugiat veniam eveniet autem tempore adipisci optio minus, sapiente itaque magni vel modi deleniti assumenda velit! Laboriosam, provident. Molestias,
                 veniam!
               </p>
@@ -173,8 +178,8 @@
           <div class="img-project mb-16 md:mb-0">
             <img data-aos="flip-left" data-aos-offset="300" data-aos-delay="150" src="src/img/project2.jpg" alt="project 2" srcset="" />
             <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="600">
-              <h5 class="text-green-500 font-bold uppercase text-2xl mt-6">Projek 2</h5>
-              <p class="mt-4 text-sm text-left text-gray-600">
+              <h5 class="text-green-500 dark:text-gray-200 font-bold uppercase text-2xl mt-6">Projek 2</h5>
+              <p class="mt-4 text-sm text-left text-gray-600 dark:text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam autem ex id earum reiciendis dolor, culpa dignissimos. Delectus ratione unde nostrum possimus deserunt voluptatum, nisi maiores officia quos! Minima, accusamus!
               </p>
             </div>
@@ -182,8 +187,8 @@
           <div class="img-project mb-16 md:mb-0">
             <img data-aos="flip-left" data-aos-offset="300" data-aos-delay="250" src="src/img/project3.jpg" alt="project 3" srcset="" />
             <div data-aos="fade-down" data-aos-offset="0" data-aos-delay="700">
-              <h5 class="text-green-500 font-bold uppercase text-2xl mt-6">Projek 3</h5>
-              <p class="mt-4 text-sm text-left text-gray-600">
+              <h5 class="text-green-500 dark:text-gray-200 font-bold uppercase text-2xl mt-6">Projek 3</h5>
+              <p class="mt-4 text-sm text-left text-gray-600 dark:text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates neque perferendis delectus asperiores numquam corporis sint reiciendis voluptatum, doloremque vitae molestias aspernatur eum obcaecati, laboriosam
                 similique iusto quod magni architecto.
               </p>
@@ -202,6 +207,7 @@
     </section>
 
     <section id="contact" class="pt-24 mb-32 md:mx-2 overflow-x-hidden overflow-y-hidden">
+      <h3 data-aos="fade-down" data-aos-anchor-placement="top-bottom" class="text-white font-bold text-3xl mb-8 lg:text-4xl text-center">Berteman Dengan Saya di Sosial Media</h3>
       <div class="content-contact flex flex-col md:flex-row mx-2 md:container md:mx-auto md:justify-center">
         <!-- tablet / desltop -->
         <a data-aos="flip-left" data-aos-offset="100" href="https://www.instagram.com/endaadittia?igsh=MXY3MGdtcWEzdXVrdA==" class="md:w-1/4 hidden md:block">
