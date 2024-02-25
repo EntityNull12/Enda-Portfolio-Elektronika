@@ -126,5 +126,8 @@
     @apply  -translate-y-[5px]
 }
 
-
+.sosmed-ig{
+    background-image: url(./img/background-ig.jpg);
+    background-position: center;
+}
 
