@@ -11,10 +11,10 @@ Portfolio ini dibuat untuk sebagai tugas elektronika.
 Teknologi dari web ini yang saya gunakan adalah :
 
 - HTML, CSS, JS
-- Framework CSS: [Tailwind CSS](https://tailwindcss.com/)
-- Framework Tailwind CSS dan dark mode: [Flowbite](https://flowbite.com/)
-- Animasi scroll: [AOS](https://michalsnik.github.io/aos/)
-- Platform animasi: [GSAP](https://gsap.com/)
+- Framework CSS : [Tailwind CSS](https://tailwindcss.com/)
+- Framework Tailwind CSS dan dark mode : [Flowbite](https://flowbite.com/)
+- Animasi scroll : [AOS](https://michalsnik.github.io/aos/)
+- Platform animasi : [GSAP](https://gsap.com/)
 
 Terimakasih juga [IconScout](https://iconscout.com/) yang memnyediakan icon - icon untuk website ini
 
