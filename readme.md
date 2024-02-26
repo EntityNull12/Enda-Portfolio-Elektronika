@@ -2,7 +2,7 @@
 
 Nama : Enda Adittia Saputra  
 NIM : 223443009  
-Kelas 1 AEC 1  
+Kelas : 1 AEC 1  
 
 Portfolio ini dibuat untuk sebagai tugas elektronika.
 
