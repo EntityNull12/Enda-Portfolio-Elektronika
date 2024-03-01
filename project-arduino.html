@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projek Arduino</title>
+    <title>Enda - Eksperimen Arduino Menggunakan Proteus 8 Pro</title>
     <link rel="shortcut icon" href="src/img/icon.png" type="image/x-icon" />
     <!-- tailwind / flowbite -->
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/input.css" />
     <!-- font -->
     <link rel="stylesheet" href="./src/font/font.css" />
-    <!-- aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <header>
@@ -117,15 +115,160 @@
 
       <div class="content-article mt-24 mx-4 lg:mx-20">
         <figure class="mb-12">
-          <img src="src/img/project.jpg" alt="gambar" srcset="" class="mx-auto w-96 h-64 md:rounded-lg" />
+          <img src="src/img/project2.jpg" alt="gambar" srcset="" class="mx-auto max-w-2xl h-64 md:rounded-lg" />
         </figure>
-        <p class="transition-all dark:text-gray-400">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo amet voluptas aliquid nihil voluptatibus accusantium itaque temporibus rerum possimus, repudiandae suscipit dolor placeat, ipsa adipisci soluta atque modi!
-          Dolores, sunt. Nulla, mollitia magnam qui illo excepturi quaerat, ad commodi beatae nemo sit odio assumenda! Voluptatem velit placeat sunt cupiditate?
-        </p>
+
+        <ol class="list-decimal transition-all mx-4 dark:text-gray-400">
+          <li class="font-bold text-2xl mb-4">Rumusan Masalah</li>
+          <p>Berkaitan dengan uraian pada latar belakang, maka dapat dirumuskan pemasalahan yaitu:</p>
+          <ol class="list-decimal mt-4 list-inside">
+            <li>Bagaimanakah alat peraga karakteristik transistor berbasis arduino UNO dengan laptop?</li>
+            <li>Bagaimanakah kurva karakteristik keluaran transistor pada konfigurasi emitor bersama?</li>
+            <li>Bagaimanakah kurva karakteristik masukan transistor pada konfigurasi emitor bersama?</li>
+          </ol>
+          <li class="font-bold text-2xl my-4">Tujuan</li>
+          <p>Berdasarkan rumusan masalah yang telah dijelaskan, maka tujuan yang ingin dicapai dalam penelitian ini adalah sebagai berikut :</p>
+          <ol class="list-decimal mt-4 list-inside">
+            <li>Membuat alat peraga karakteristik transistor berbasis arduino UNO dengan laptop</li>
+            <li>Menampilkan kurva karakteristik keluaran transistor menggunakan alat peraga karakteristik transistor berbasis arduino UNO dengan laptop</li>
+            <li>Menampilkan kurva karakteristik masukan transistor menggunakan alat peraga karakteristik transistor berbasis arduino UNO dengan laptop</li>
+          </ol>
+          <li class="font-bold text-2xl my-4">Alat dan Bahan Penelitian</li>
+          <ol class="list-decimal list-inside">
+            <li>Alat Penelitian</li>
+            <ol class="list-inside list-disc">
+              <li>Laptop</li>
+              <li>Microsoft Excel</li>
+              <li>Proteus 8 Profesional</li>
+              <li>Multimeter Digital</li>
+              <li>Toolset</li>
+            </ol>
+            <li>Bahan-bahan Penelitian</li>
+            <ol class="list-inside list-disc">
+              <li>Ardiono UNO</li>
+              <li>Sensor arus</li>
+              <li>Sensor tegangan</li>
+              <li>LCD 20 x 4</li>
+              <li>Baterai</li>
+              <li>Resistor dan potensiometer</li>
+              <li>Transistor</li>
+              <li>Kabel penghubung</li>
+            </ol>
+          </ol>
+          <li class="font-bold text-2xl my-4">Rangkaian Elektronika</li>
+          <div class="md:flex md:flex-row">
+            <figure class="max-w-lg md:mx-1">
+              <img class="h-auto max-w-full rounded-lg" src="src/img/arduino.png" alt="image description" />
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Rangkaian Arduino</figcaption>
+            </figure>
+            <figure class="max-w-lg mt-4 md:mx-1">
+              <img class="h-auto max-w-full rounded-lg" src="src/img/rangkaian.png" alt="image description" />
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Rangkaian</figcaption>
+            </figure>
+          </div>
+          <div class="md:flex md:flex-row">
+            <figure class="max-w-lg mt-4 md:mx-1">
+              <img class="h-auto max-w-full rounded-lg" src="src/img/arduino-code.png" alt="image description" />
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">kode program 1</figcaption>
+            </figure>
+            <figure class="max-w-lg mt-4 md:mx-1">
+              <img class="h-auto max-w-full rounded-lg" src="src/img/arduino-code2.png" alt="image description" />
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">kode program 2</figcaption>
+            </figure>
+            <figure class="max-w-lg mt-4 md:mx-1">
+              <img class="h-auto max-w-full rounded-lg" src="src/img/arduino-code3.png" alt="image description" />
+              <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">kode program 3</figcaption>
+            </figure>
+          </div>
+
+          <li class="font-bold text-2xl my-4">Alur Pengerjaan</li>
+          <figure class="max-w-lg mx-auto">
+            <img class="h-auto max-w-full rounded-lg" src="src/img/alur-pengerjaan.png" alt="image description" />
+            <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Alur Pengerjaan</figcaption>
+          </figure>
+          <li class="font-bold text-2xl my-4">Tabel Penyajian Data</li>
+
+          <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+              <caption class="p-5 text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-900">
+                Tabel Penyajian Data
+                <p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">Tabel Data Karakteristik Output Emitor Bersama, saat IB= 10.658(µA)</p>
+              </caption>
+              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                  <th scope="col" class="px-6 py-3">No</th>
+                  <th scope="col" class="px-6 py-3">IC(mA)</th>
+                  <th scope="col" class="px-6 py-3">Vce(Volt)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">1</th>
+                  <td class="px-6 py-4">1,311</td>
+                  <td class="px-6 py-4">0,194</td>
+                </tr>
+                <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">2</th>
+                  <td class="px-6 py-4">1,481</td>
+                  <td class="px-6 py-4">0,383</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">3</th>
+                  <td class="px-6 py-4">1,487</td>
+                  <td class="px-6 py-4">0,651</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">4</th>
+                  <td class="px-6 py-4">1,492</td>
+                  <td class="px-6 py-4">0,918</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">5</th>
+                  <td class="px-6 py-4">1,497</td>
+                  <td class="px-6 py-4">1,186</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">6</th>
+                  <td class="px-6 py-4">1,508</td>
+                  <td class="px-6 py-4">1,454</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">7</th>
+                  <td class="px-6 py-4">1,508</td>
+                  <td class="px-6 py-4">1,721</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">8</th>
+                  <td class="px-6 py-4">1,513</td>
+                  <td class="px-6 py-4">1,989</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">9</th>
+                  <td class="px-6 py-4">1,519</td>
+                  <td class="px-6 py-4">2,256</td>
+                </tr>
+                <tr class="bg-white dark:bg-gray-900 hover:bg-gray-200 transition-all dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap dark:text-white">10</th>
+                  <td class="px-6 py-4">1,524</td>
+                  <td class="px-6 py-4">2,254</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <figure class="max-w-lg mx-auto mt-4">
+            <img class="h-auto max-w-full rounded-lg" src="src/img/diagram.png" alt="image description" />
+            <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Diagram</figcaption>
+          </figure>
+          <li class="font-bold text-2xl my-4">Analisa</li>
+          <ol class="list-inside list-disc">
+            <li class="mb-2">Ada peningkatan grafik yang dimana saat Ic meningkat sedikit, maka Vce meningkat yang cukup signifikan. Ini merupakan daerah aktif BJT, dimana ia beroperasi sebagai penguat arus.</li>
+            <li>Pada akhirnya grafik ini berakhir menjadi mendatar. Ini adalah daerah saturasi BJT, di mana peningkatan Vce memiliki sedikit efek pada Ic. Transistor pada dasarnya "aktif" dan menghantarkan arus maksimum.</li>
+          </ol>
+          <li class="font-bold text-2xl my-4">Kesimpulan</li>
+          <p>Kesimpulan dari eksperimen ini adalah kita menggunakan aplikasi Proteus 8 untuk mengetahui karakteristik transistor berbasis arduino UNO. Dari analisa sebelumnya, bahwa ketika ada peningkatan pada Ic maka Vce juga meningkat, tetapi tentu ada batasnya.</p>
+        </ol>
       </div>
     </article>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
   <footer class="bg-green-500 mt-4">
     <div class="w-full sm:text-center font-semibold text-sm md:ext-3xl py-4 px-4 text-gray-100">Enda Adittia Saputra 2024</div>
